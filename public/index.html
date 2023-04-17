@@ -9,10 +9,42 @@
       href="https://fonts.googleapis.com/css2?family=Prompt&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="/public/css/main.css" />
   </head>
   <body>
-    <div class="px-1"></div>
-    <a href="" class="btn btn-dark px-1">Button</a>
+    <!-- header -->
+    <header id="header__home">
+      <div class="container">
+        <nav class="main-nav">
+          <img src="img/logo.png" alt="" class="main-nav__logo" />
+          <ul class="main-nav__list">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="about.html" class="">About</a></li>
+            <li><a href="projects.html" class="">Projects</a></li>
+            <li><a href="contact.html" class="">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-content">
+          <h1>
+            I'm Ali Huseynli
+            <span
+              class="typewrite"
+              data-period="1000"
+              data-type='["Frontend","Backend","Developer"]'
+            ></span>
+          </h1>
+          <a href="" class="btn btn-light animate__animated animate__swing my-2"
+            >View My Portfolio</a
+          >
+        </div>
+      </div>
+    </header>
+    <script src="Js/jquery.min.js"></script>
+    <script src="Js/type-writer.js"></script>
   </body>
 </html>
