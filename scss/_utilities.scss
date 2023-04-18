@@ -1,8 +1,36 @@
 @import "variables";
+.bg-medium {
+  background-color: $medium-color;
+}
+.bg-light {
+  background-color: $light-color;
+}
 .container {
   max-width: $max-width;
   padding: 0 1.4rem;
   margin: auto;
+}
+.bottom-line {
+  width: 5rem;
+  height: 0.4rem;
+  background-color: $primary-color;
+  margin: auto;
+}
+.margin {
+  margin: 4rem;
+}
+.section-text {
+  text-align: center;
+  h1 {
+    padding: 0 0.5rem;
+    font-size: 2.2rem;
+  }
+  .bottom-line {
+    margin-bottom: 1rem;
+  }
+  p {
+    padding-bottom: 1.5rem;
+  }
 }
 %btn-shared {
   display: inline-block;

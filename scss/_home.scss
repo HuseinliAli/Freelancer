@@ -1,0 +1,74 @@
+#main {
+  padding: 2rem;
+  .tools {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    .tool-card {
+      text-align: center;
+    }
+  }
+}
+.profile-summary {
+  padding-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  .summary-card {
+    text-align: center;
+    padding: 1.5rem;
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+#working-process {
+  .processes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    .process-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+      .hovered-process {
+        display: flex;
+        transform: translate(1.5rem);
+
+        .bg-i {
+          transition: all 0.8s;
+          width: 8rem;
+          height: 8rem;
+          border-radius: 50%;
+          background-color: $dark-color;
+          color: $light-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        h3 {
+          transition: all 0.8s;
+          width: 3rem;
+          height: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $medium-color;
+          z-index: 1;
+          transform: translate(-2rem);
+          border-radius: 50%;
+        }
+        &:hover .bg-i {
+          background-color: $primary-color;
+        }
+        &:hover .bg-i i {
+          color: $light-color;
+        }
+        &:hover h3 {
+          color: $light-color;
+          background-color: $dark-color;
+        }
+      }
+    }
+  }
+}
